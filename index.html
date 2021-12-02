@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+	<meta charset='utf-8'>
+	<title> Countdown Website</title>
+	<link rel="stylesheet" type="text/css" href="">
+
+</head>
+<style>
+  
+*
+{
+  margin: 0;
+  padding: 0;
+}
+header
+{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.unsplash.com/photo-1563253746-350a0a877afa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+  height: 100vh;background-position: center;
+  background-size: cover;
+}
+.hero
+{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+h1
+{
+  padding-left: 150px 100px;
+  text-align: center;
+  color: white;
+  font: bold 52px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #fe4902,
+               2px 2px #fe4902,
+               3px 3px #fe4902; 
+}
+hr
+{
+  width: 50%;
+    margin: 30px auto;
+    border: 1.5px solid #fff;
+}
+p
+{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#launch
+{
+  font-size: 40px;
+  word-spacing: 20px; 
+}
+.logo
+{
+  height: 150px;
+  padding: 2px 10px;
+  border-radius: 30px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+
+</style>
+<body>
+	<header>
+		<br>
+		<br>
+		<br>
+		<div class="navbar-header">
+
+    	    <a href=""> <img class="logo" src="logo.png"></a>
+    	</div>
+
+		<div class="hero">
+		<p> Dayò Badru Portfolio Website</p>
+		<h1> COMING SOON</h1>
+         
+         <hr>
+           <p id="launch"></p>
+
+        </div>
+
+      
+        
+	</header>
+
+  
+
+</body>
+
+    <script>
+
+
+    	var countDownDate = new Date("July 20, 2025 00:00:00").getTime();
+
+    	var x = setInterval(function() {
+
+             var now = new Date().getTime();
+
+             var distance = countDownDate - now;
+
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      
+      document.getElementById("launch").innerHTML =days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+               if (distance < 0) {
+                   clearInterval(x);
+                   document.getElementById("launch").innerHTML = "EXPIRED";
+               }
+
+    	}, 1000);
+    </script>
+
+<footer class="container-fluid bg-4 text-center"> 
+  <div style="text-align: center">
+  <div style="text-align: center">
+  
+
+<a style="color:white;font-size:30px;" href="
+    https://www.linkedin.com/in/toheeb-badru-21a8b015b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>   &nbsp;  &nbsp;
+<a style="color:white;font-size:30px;" href="
+   https://github.com/TBadru"><i class="fa fa-github" aria-hidden="true"></i></a> 
+
+
+
+
+</div>
+
+ 
+
+<div class="copy" style="font-size: 13px">
+                © 2019 Toheeb Badru. All rights reserved
+            </div>
+
+
+
+  
+  <p><font color="" style="font-size: 13px">created with ❤ by Dayo Badru</font></p>
+
+<a href="#top"style="color:gray;font-size:10px;text-align:right;" >back to top</a>
+   </div> 
+</div> 
+</div> 
+ </footer>
+</html>
